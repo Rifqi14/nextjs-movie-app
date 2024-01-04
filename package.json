@@ -1,31 +1,39 @@
 {
-  "name": "movie-app",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@nextui-org/react": "^2.2.9",
-    "@tanstack/react-query": "^5.12.2",
-    "framer-motion": "^10.16.15",
-    "next": "14.0.3",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@tanstack/eslint-plugin-query": "^5.12.1",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.3",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
-  }
+	"name": "movie-app",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"generate:oas": "openapi-typescript https://developer.themoviedb.org/openapi/64542913e1f86100738e227f -o ./generated/schema.d.ts"
+	},
+	"dependencies": {
+		"@egjs/react-flicking": "^4.11.1",
+		"@nextui-org/react": "^2.2.9",
+		"@tanstack/react-query": "^5.12.2",
+		"@tanstack/react-query-devtools": "^5.13.3",
+		"framer-motion": "^10.16.15",
+		"next": "14.0.3",
+		"next-themes": "^0.2.1",
+		"react": "^18",
+		"react-dom": "^18",
+		"styled-components": "^6.1.1"
+	},
+	"devDependencies": {
+		"@iconify-icon/react": "^1.0.8",
+		"@tanstack/eslint-plugin-query": "^5.12.1",
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"autoprefixer": "^10.0.1",
+		"dayjs": "^1.11.10",
+		"eslint": "^8",
+		"eslint-config-next": "14.0.3",
+		"openapi-typescript": "^6.7.2",
+		"postcss": "^8",
+		"tailwindcss": "^3.3.0",
+		"typescript": "^5"
+	}
 }

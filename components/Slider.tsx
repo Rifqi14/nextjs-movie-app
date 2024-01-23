@@ -33,6 +33,7 @@ export default function Slider({ children }: Props) {
 					{children &&
 						(children as Array<ReactNode>).map((_, idx) => (
 							<Button
+								key={idx}
 								isIconOnly
 								className={`w-5 bg-transparent min-w-unit-1 ${idx === active ? 'text-white' : 'text-gray-600/90'} hover:text-white`}
 								startContent={<Iconify icon={'icon-park-outline:dot'} className='text-xl' onClick={() => setActive(idx)} />}

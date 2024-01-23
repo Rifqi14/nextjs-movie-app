@@ -30,6 +30,7 @@ export default function HeroBanner() {
 							<CardHeader className='absolute bg-gradient-to-t from-black/0 via-gray-900/70 to-black/90 top-0 z-10 h-1/3'></CardHeader>
 							<Image
 								removeWrapper
+								alt={result.title}
 								src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}original/${result.backdrop_path}`}
 								className='z-0 w-full h-screen object-cover'
 							/>

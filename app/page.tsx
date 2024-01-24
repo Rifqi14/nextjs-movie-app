@@ -1,3 +1,4 @@
+import Featured from '@/components/Featured';
 import HeroBanner from '@/components/HeroBanner';
 import JustRelease from '@/components/JustRelease';
 import MovieOnAwards from '@/components/MovieOnAwards';
@@ -13,6 +14,7 @@ export default function Home() {
 			<HeroBanner />
 			<JustRelease />
 			<PopularWeek />
+			<Featured />
 			<Movies />
 			<Series />
 			<KoreanSeries />
